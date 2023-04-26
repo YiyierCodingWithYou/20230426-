@@ -24,17 +24,17 @@ namespace StudentGradeUI
 			int chi,math,eng;
 			if (!int.TryParse(chinese_textBox.Text, out chi))
 			{
-				MessageBox.Show("請輸入國文成績!");
+				MessageBox.Show("請輸入國文成績!","警告",MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			if(!int.TryParse(math_textBox.Text, out math))
 			{
-				MessageBox.Show("請輸入數學成績!");
+				MessageBox.Show("請輸入數學成績!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			if (!int.TryParse(english_textBox.Text, out eng))
 			{
-				MessageBox.Show("請輸入英文成績!");
+				MessageBox.Show("請輸入英文成績!", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			try
